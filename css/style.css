@@ -14,7 +14,6 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    height: 100vh;
 }
 
 /* header and banner part */
@@ -217,8 +216,9 @@ nav ul li {
 }
 
 .cards button {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
+    padding: 10px;
     /* padding: 40px; */
     background-color: white;
     border: 1px solid #FF900E;
@@ -269,6 +269,18 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer {
+    margin: 100px 0 200px 0;
+    height: 100px;
+    background: #FFF4E7;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #424242;
+
 }
 
 /* small device */
