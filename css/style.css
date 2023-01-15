@@ -134,7 +134,7 @@ nav ul li {
     display: flex;
 }
 
-/* left */
+/*features and love left */
 .love-items-container {
     width: 50%;
 }
@@ -167,7 +167,7 @@ nav ul li {
     line-height: 23px;
 }
 
-/* right */
+/*features and love right */
 .my-img {
     width: 50%;
     padding-left: 50px;
@@ -212,11 +212,6 @@ nav ul li {
 /* cards part */
 .cards {
     margin: 100px 70px;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -247,6 +242,33 @@ nav ul li {
     font-size: 45px;
     line-height: 53px;
     color: #424242;
+}
+
+/* company card section 2 */
+.company-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 40px 50px 40px;
+    gap: 20px;
+}
+
+.company-card {
+    height: 300px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    /* margin: 20px; */
+    border-radius: 10px;
+}
+
+.company-card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.company-card h2 {
+    text-align: center;
+    margin-top: 30px;
 }
 
 /* Our Sponsors section style */
@@ -377,11 +399,26 @@ footer {
 
     .cards {
         margin-top: 35px;
+        margin-bottom: 35px;
         grid-template-columns: 1fr;
     }
 
     .cards button {
         width: 100%;
+    }
+
+    /* company card section 2 */
+    .company-cards {
+        grid-template-columns: 1fr;
+        gap: 70px;
+        margin-bottom: 140px;
+    }
+
+    .company-card {
+        width: 100%;
+        height: 100%;
+        border: 1px solid;
+        margin-top: 60px;
     }
 
     .company-logos {
@@ -452,7 +489,7 @@ footer {
 
     .experience-btn {
         top: 95%;
-        left: 33%;
+        left: 40%;
         font-size: 33px;
         padding: 10px 20px;
     }
@@ -468,7 +505,7 @@ footer {
     }
 
     .cards {
-        margin: 50px 70px;
+        margin: 50px 35px 0 35px;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -476,5 +513,27 @@ footer {
         width: 100%;
     }
 
+    /* company card section 2 */
+    .company-cards {
+        grid-template-columns: 1fr;
+        gap: 70px;
+        margin-bottom: 140px;
+    }
 
+    .company-card {
+        width: 100%;
+        height: 100%;
+        border: 1px solid;
+        margin-top: 60px;
+    }
+
+
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .company-cards {
+        margin: 0 40px 50px 20px;
+        gap: 21px;
+    }
 }
