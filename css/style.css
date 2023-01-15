@@ -1,0 +1,41 @@
+/* google font lnk */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* common style */
+
+body {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* header and banner part */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+}
