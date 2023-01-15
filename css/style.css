@@ -221,7 +221,6 @@ nav ul li {
     width: 160px;
     height: 160px;
     padding: 10px;
-    /* padding: 40px; */
     background-color: white;
     border: 1px solid #FF900E;
     border-radius: 8px;
@@ -256,7 +255,6 @@ nav ul li {
     height: 300px;
     width: 300px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    /* margin: 20px; */
     border-radius: 10px;
 }
 
@@ -381,7 +379,7 @@ footer {
 
     .experience-btn {
         top: 95%;
-        left: 33%;
+        left: 30%;
         font-size: 33px;
         padding: 10px 20px;
     }
