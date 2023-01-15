@@ -12,14 +12,14 @@
 
 body {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 100vh;
 }
 
 /* header and banner part */
 .header {
-    padding: 50px 50px;
+    padding: 40px 50px;
     background: rgba(255, 144, 14, 0.1);
 }
 
@@ -51,7 +51,7 @@ nav ul li {
 
 .banner-title {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 4em;
     line-height: 75px;
     color: #131313;
 }
@@ -69,10 +69,123 @@ nav ul li {
     border-radius: 8px;
     color: white;
     padding: 10px 20px;
-    margin-top: 28px;
+    margin-top: 20px;
 }
 
 .banner img {
     width: 100%;
     margin-top: 50px;
+}
+
+
+/* team part and features part section style */
+.company-team-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 70px 70px;
+}
+
+.team-part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 50%;
+
+}
+
+.features-plan {
+    width: 50%;
+    margin-left: 70px;
+}
+
+.team-part img {
+    width: 100%;
+}
+
+.plan-title {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.sub-title {
+    color: #727272;
+}
+
+.sub-title1 {
+    color: #131313;
+}
+
+.sub-title2 {
+    color: #FF900E;
+
+}
+
+.plan-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+@media screen and (max-width:576px) {
+    .banner-title {
+        font-size: 3em;
+        line-height: 60px;
+    }
+
+    .company-team-section {
+        flex-direction: column;
+    }
+
+    .team-part {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .features-plan {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px;
+    }
+}
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:768px) {
+    .banner-title {
+        font-size: 3em;
+        line-height: 60px;
+    }
+
+    .company-team-section {
+        flex-direction: column;
+    }
+
+    .team-part {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .features-plan {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+
+
 }
