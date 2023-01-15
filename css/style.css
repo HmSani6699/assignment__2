@@ -242,6 +242,35 @@ nav ul li {
     color: #424242;
 }
 
+/* Our Sponsors section style */
+.sponsors-blog {
+    text-align: center;
+}
+
+.sponsors-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.company-logo-container {
+    margin-top: 50px;
+}
+
+.company-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* small device */
 @media screen and (max-width:576px) {
     .banner {
