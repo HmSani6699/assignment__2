@@ -19,11 +19,14 @@ body {
 
 /* header and banner part */
 .header {
+    padding: 50px 50px;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 50px;
-    background: rgba(255, 144, 14, 0.1);
 }
 
 nav ul {
@@ -38,4 +41,38 @@ nav ul li {
     cursor: pointer;
     font-weight: 500;
     font-size: 18px;
+}
+
+/* banner part style */
+.banner {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #131313;
+}
+
+.banner-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.banner-btn {
+    border: none;
+    background: #FF900E;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 28px;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 50px;
 }
