@@ -157,6 +157,10 @@ nav ul li {
     border-radius: 8px;
 }
 
+.item p {
+    text-align: justify;
+}
+
 .item-title {
     font-weight: 600;
     font-size: 20px;
@@ -208,10 +212,13 @@ nav ul li {
 /* cards part */
 .cards {
     margin: 100px 70px;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
@@ -272,7 +279,7 @@ nav ul li {
 }
 
 footer {
-    margin: 100px 0 200px 0;
+    margin: 100px 0 0 0;
     height: 100px;
     background: #FFF4E7;
     border-radius: 8px;
@@ -287,6 +294,10 @@ footer {
 
 /* small device */
 @media screen and (max-width:576px) {
+    .header {
+        padding: 40px 20px;
+    }
+
     .banner {
         margin-top: 40px;
     }
@@ -303,6 +314,7 @@ footer {
     .company-team-section {
         flex-direction: column;
         padding: 40px 50px;
+        margin-top: 30px;
     }
 
     .team-part {
@@ -360,11 +372,22 @@ footer {
     .carts-container {
         margin-top: 10px;
         text-align: center;
+        padding: 10px;
     }
 
     .cards {
         margin-top: 35px;
+        grid-template-columns: 1fr;
     }
+
+    .cards button {
+        width: 100%;
+    }
+
+    .company-logos {
+        flex-direction: column;
+    }
+
 }
 
 /* medium device */
@@ -445,7 +468,12 @@ footer {
     }
 
     .cards {
-        margin-top: 35px;
+        margin: 50px 70px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards button {
+        width: 100%;
     }
 
 
